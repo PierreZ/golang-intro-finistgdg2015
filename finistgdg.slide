@@ -23,7 +23,7 @@ Steven Le Roux
 
 * Sommaire
 - Les origines du Go et les frustrations du développeur logiciel
-- Le but du Go
+- Go ?
 - Le Go en 2015
 - Qui utilise ce langage de hippie ?
 - On veut du code !
@@ -48,8 +48,9 @@ Go a été créé par:
 .image http://imgs.xkcd.com/comics/compiling.png 300 _
 .caption Compiling [[https://xkcd.com/303/][https://xkcd.com/303/]]
 
-* Le but du Go
+* Go ?
 - Langage open-source adapté à aujourd'hui
+- Langage compilé et typé
 - Compilation éclair
 - Faible empreinte mémoire
 - Multiplateforme
@@ -86,4 +87,42 @@ Aujourd'hui
 hello, World
 
 .play sample/hello.go
-.image images/gopher.jpg 300 _
+.image images/gopher.jpg 200 _
+
+* On veut du code !
+Déclaration de variable
+
+.play sample/variable.go
+.image images/gopher.jpg 200 _
+
+
+* On veut du code !
+Nombreux types
+
+- string
+- int, int8, int16, int32, int64
+- uint, uint8, uint16, uint32, uint64, uintptr
+- Byte
+- rune(alias for int32,represents a Unicode code point)
+- float32, float64
+- complex64 complex128
+
+* On veut du code !
+Conversion de types
+
+.play sample/conversion.go
+.image images/gopher.jpg 200 _
+
+
+
+* On veut du code !
+Fonctions
+
+.play sample/fonctions.go
+.image images/gopher.jpg 200 _
+
+* On veut du code !
+One loop to rule them all
+
+.play sample/loop.go
+.image images/gopher.jpg 200 _
