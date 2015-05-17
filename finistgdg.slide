@@ -1,0 +1,89 @@
+Introduction au langage Go
+FinistGDG 2015
+Tags: FinistGDG, Golang
+
+Pierre Zemb, Horacio Gonzalez, Steven Le Roux
+@PierreZ, @LostInBrittany, @StevenLeRoux
+
+* Présentation des speakers
+
+.image images/pierre.jpeg 300 300
+.caption Pierre Zemb - Etudiant ISEN Brest - Stagiaire OVH.pl
+
+.link https://pierrezemb.fr https://pierrezemb.fr
+.link https://twitter.com/PierreZ @PierreZ
+
+* Présentation des speakers
+
+Horacio Gonzalez
+
+* Présentation des speakers
+
+Steven Le Roux
+
+* Sommaire
+- Les origines du Go et les frustrations du développeur logiciel
+- Le but du Go
+- Le Go en 2015
+- Qui utilise ce langage de hippie ?
+- On veut du code !
+- A la découverte de la "Google stack"
+
+* Les origines du Go
+
+Go a été créé par:
+
+- Ken Thompson
+- Rob Pike
+- Robert Griesemer
+
+.image http://cse360fall13.wikispaces.asu.edu/file/view/Screen%20shot%202013-09-15%20at%201.31.54%20PM.png/451286472/Screen%20shot%202013-09-15%20at%201.31.54%20PM.png 250 _
+.caption (De gauche à droite) Robert Griesemer, Rob Pike and Ken Thompson 
+.caption [[http://cse360fall13.wikispaces.asu.edu/Google%20Go][http://cse360fall13.wikispaces.asu.edu/Google%20Go]]
+
+* Les problématiques du développeur logiciel
+- Ecrire du code robuste et maintenable n'est pas aisé
+- Les temps de compilation sont beaucoup trop long
+
+.image http://imgs.xkcd.com/comics/compiling.png 300 _
+.caption Compiling [[https://xkcd.com/303/][https://xkcd.com/303/]]
+
+* Le but du Go
+- Langage open-source adapté à aujourd'hui
+- Compilation éclair
+- Faible empreinte mémoire
+- Multiplateforme
+- Simple à rédiger
+- Conçu pour de la concurrence
+- Syntaxe claire
+- No more Maven or Makefile
+
+.caption Go = Easy like Python + Efficient like C++ + Fast compilation
+
+* Le Go en 2015
+Hier
+- 21 Septembre 2007: Début du projet
+- 28 Mars 2012: Version 1.0 stable
+
+Aujourd'hui
+- 10 septembre 2014: Version 1.4
+- Août 2015: Version 1.5
+
+.image images/trends.png 200 _
+.caption [[https://www.google.fr/trends/explore#q=golang][Google trends for Golang]]
+
+*  Qui utilise ce langage de hippie ?
+- Google (dl.google.com et une partie de Youtube)
+- Docker (automatisation des containers Linux)
+- Iron.io (Remplacement d'une stack Ruby/Groovy par du Go)
+- SoundCloud (douzaines de features écrites en Go)
+- CloudFlare (Service de DNS distribué)
+- Couchbase (interface de requêtage pour N1QL)
+- Canonical (Développement de Juju)
+
+
+* On veut du code !
+hello, World
+
+.play sample/hello.go
+.image images/gopher.jpg 300 _
