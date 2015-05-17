@@ -3,7 +3,6 @@ FinistGDG 2015
 Tags: FinistGDG, Golang
 
 Pierre Zemb, Horacio Gonzalez, Steven Le Roux
-@PierreZ, @LostInBrittany, @StevenLeRoux
 
 * Présentation des speakers
 
@@ -81,6 +80,9 @@ Aujourd'hui
 - CloudFlare (Service de DNS distribué)
 - Couchbase (interface de requêtage pour N1QL)
 - Canonical (Développement de Juju)
+
+* Le Go en 2015
+.image images/gobash.jpg 500 _
 
 
 * On veut du code !
