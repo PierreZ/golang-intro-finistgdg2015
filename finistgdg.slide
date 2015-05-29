@@ -2,7 +2,11 @@ Introduction au langage Go
 FinistGDG 2015
 Tags: FinistGDG, Golang
 
-Pierre Zemb, Horacio Gonzalez, Steven Le Roux
+Pierre Zemb
+Etudiant à ISEN Brest - Stagiaire OVH.pl
+contact@pierrezemb.fr
+https://pierrezemb.fr
+@PierreZ
 
 * Présentation des speakers
 
@@ -12,23 +16,23 @@ Pierre Zemb, Horacio Gonzalez, Steven Le Roux
 .link https://pierrezemb.fr https://pierrezemb.fr
 .link https://twitter.com/PierreZ @PierreZ
 
-* Présentation des speakers
-
-Horacio Gonzalez
-
-* Présentation des speakers
-
-Steven Le Roux
-
 * Sommaire
-- Les origines du Go et les frustrations du développeur logiciel
-- Go ?
+- Mais c'est quoi le Go ?
+- Les origines du Go
+- Les frustrations du développeur logiciel
+- Qui utilise ce langage de hipster ?
 - Le Go en 2015
-- Qui utilise ce langage de hippie ?
 - On veut du code !
-- A la découverte de la "Google stack"
 
-* Les origines du Go
+* Mais c'est quoi le Go ?
+
+"Go is an open source programming language that makes it easy to build simple, reliable, and efficient software."
+
+.link https://golang.org/ https://golang.org/
+
+.caption Go = Easy like Python + Efficient like C++ + Fast compilation
+
+* Les origines de Go
 
 Go a été créé par:
 
@@ -40,25 +44,14 @@ Go a été créé par:
 .caption (De gauche à droite) Robert Griesemer, Rob Pike and Ken Thompson 
 .caption [[http://cse360fall13.wikispaces.asu.edu/Google%20Go][http://cse360fall13.wikispaces.asu.edu/Google%20Go]]
 
-* Les problématiques du développeur logiciel
-- Ecrire du code robuste et maintenable n'est pas aisé
+* Les problématiques du développeur logiciel chez Google
+- Écrire un logiciel robuste et distribué est compliqué
+- Un code C++ peut devenir compliqué à maintenir/lire
 - Les temps de compilation sont beaucoup trop long
+
 
 .image http://imgs.xkcd.com/comics/compiling.png 300 _
 .caption Compiling [[https://xkcd.com/303/][https://xkcd.com/303/]]
-
-* Go ?
-- Langage open-source adapté à aujourd'hui
-- Langage compilé et typé
-- Compilation éclair
-- Faible empreinte mémoire
-- Multiplateforme
-- Simple à rédiger
-- Conçu pour de la concurrence
-- Syntaxe claire
-- No more Maven or Makefile
-
-.caption Go = Easy like Python + Efficient like C++ + Fast compilation
 
 * Le Go en 2015
 Hier
@@ -72,17 +65,72 @@ Aujourd'hui
 .image images/trends.png 200 _
 .caption [[https://www.google.fr/trends/explore#q=golang][Google trends for Golang]]
 
-*  Qui utilise ce langage de hippie ?
-- Google (dl.google.com et une partie de Youtube)
-- Docker (automatisation des containers Linux)
-- Iron.io (Remplacement d'une stack Ruby/Groovy par du Go)
-- SoundCloud (douzaines de features écrites en Go)
-- CloudFlare (Service de DNS distribué)
-- Couchbase (interface de requêtage pour N1QL)
-- Canonical (Développement de Juju)
+*  Qui utilise ce langage de hipster ?
+Google pour:
+- Proxy SPDY pour Chrome mobile
+- Serveur statique pour Chrome, ChromeOS, Android SDK, Earth, etc.
+- YouTube Vitess MySQL balancer
+
+Mais aussi:
+
+Apcera, Bitbucket, bitly, Canonical, CloudFlare, Core OS, Digital Ocean, Docker, Dropbox, Facebook, Getty Images, GitHub, Heroku, Iron.io, Kubernetes, Medium, MongoDB services, Mozilla services, New York Times, pool.ntp.org, Secret, SmugMug, SoundCloud, Stripe, Square, Thomson Reuters, Tumblr, ...
+
+.image images/bus.jpg 170 _
+
+* Comment j'utilise le Go
+
+Découverte à Arkéa, développement d'une appli backend avec:
+
+- Du REST
+- Démarrage et suivi de processus Java
+- Etablissement d'une connexion SSH
+
+De façon perso:
+
+- Backend de YouCode sur Google App Engine
+- Backend d'un projet scolaire
+- À OVH?
+
+* Les gros avantages de Go
+
+- Facilité de lecture
+- Gofmt
+- Go get
+- Librairie standard gigantesque
+- Goroutines
+
 
 * Le Go en 2015
 .image images/gobash.jpg 500 _
+
+
+* Go et Java ont des points communs
+- Langage typé statiquement
+- Possède un garbage Collector
+- Les variables sont toujours initialisées
+- Méthodes
+- Interfaces
+
+
+.image images/java_meme.jpg 300 _
+
+* Go et Java ont des grosses différences
+- Pas de *VM
+- Génère un binaire statique
+- Contrôle sur la mémoire (pointeur)
+- Concurrence native
+- Tableaux, slices, et maps natifs
+
+.image images/dog.jpg 300 _
+
+* Go abandonne certains concepts pour la lisibilité du code
+- Pas de constructeurs
+- Pas d'héritage
+- Pas de Final
+- Pas d'exceptions
+- Pas d'annotations
+
+.image images/meme-mib-1.jpg 300 _
 
 
 * On veut du code !
@@ -115,8 +163,6 @@ Conversion de types
 .play sample/conversion.go
 .image images/gopher.jpg 200 _
 
-
-
 * On veut du code !
 Fonctions
 
@@ -128,3 +174,16 @@ One loop to rule them all
 
 .play sample/loop.go
 .image images/gopher.jpg 200 _
+
+
+* On veut du code !
+Le modèle de concurrence avec les goroutines
+
+.play sample/routine.go
+
+
+* On veut du code !
+Web Serveur
+
+.play sample/web_server.go
+.link http://127.0.0.1:7777/hello http://127.0.0.1:7777/hello
