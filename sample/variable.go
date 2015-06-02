@@ -5,6 +5,8 @@ import (
 	"reflect"
 )
 
+const Pi = 3.14
+
 func main() {
 
 	var i int // Java style
@@ -14,4 +16,5 @@ func main() {
 
 	fmt.Println(i, reflect.TypeOf(i))
 	fmt.Println(foo, reflect.TypeOf(foo))
+	fmt.Println(Pi, reflect.TypeOf(Pi))
 }

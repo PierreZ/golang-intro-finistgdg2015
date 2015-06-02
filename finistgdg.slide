@@ -8,10 +8,13 @@ contact@pierrezemb.fr
 https://pierrezemb.fr
 @PierreZ
 
-* Présentation des speakers
+* Pierre Zemb
 
-.image images/pierre.jpeg 300 300
-.caption Pierre Zemb - Etudiant ISEN Brest - Stagiaire OVH.pl
+.image images/isen-groupe.jpg 100 _
+.caption Etudiant ISEN Brest bientôt en cinquième année !
+
+.image images/ovh.jpg 100 _
+.caption Stagiaire OVH à Wroclaw en Pologne
 
 .link https://pierrezemb.fr https://pierrezemb.fr
 .link https://twitter.com/PierreZ @PierreZ
@@ -19,9 +22,12 @@ https://pierrezemb.fr
 * Sommaire
 - Mais c'est quoi le Go ?
 - Les origines du Go
-- Les frustrations du développeur logiciel
-- Qui utilise ce langage de hipster ?
+- Les frustrations du développeur logiciel chez Google
 - Le Go en 2015
+- Qui utilise ce langage de hipster ?
+- Moi ! (et je l'assume entièrement)
+- La concurrence
+- GO VS Java
 - On veut du code !
 
 * Mais c'est quoi le Go ?
@@ -45,6 +51,7 @@ Go a été créé par:
 .caption [[http://cse360fall13.wikispaces.asu.edu/Google%20Go][http://cse360fall13.wikispaces.asu.edu/Google%20Go]]
 
 * Les problématiques du développeur logiciel chez Google
+
 - Écrire un logiciel robuste et distribué est compliqué
 - Un code C++ peut devenir compliqué à maintenir/lire
 - Les temps de compilation sont beaucoup trop long
@@ -55,18 +62,24 @@ Go a été créé par:
 
 * Le Go en 2015
 Hier
+
 - 21 Septembre 2007: Début du projet
 - 28 Mars 2012: Version 1.0 stable
 
 Aujourd'hui
+
 - 10 septembre 2014: Version 1.4
 - Août 2015: Version 1.5
 
 .image images/trends.png 200 _
 .caption [[https://www.google.fr/trends/explore#q=golang][Google trends for Golang]]
 
+* Le Go en 2015
+.image images/gobash.jpg 500 _
+
 *  Qui utilise ce langage de hipster ?
 Google pour:
+
 - Proxy SPDY pour Chrome mobile
 - Serveur statique pour Chrome, ChromeOS, Android SDK, Earth, etc.
 - YouTube Vitess MySQL balancer
@@ -75,7 +88,8 @@ Mais aussi:
 
 Apcera, Bitbucket, bitly, Canonical, CloudFlare, Core OS, Digital Ocean, Docker, Dropbox, Facebook, Getty Images, GitHub, Heroku, Iron.io, Kubernetes, Medium, MongoDB services, Mozilla services, New York Times, pool.ntp.org, Secret, SmugMug, SoundCloud, Stripe, Square, Thomson Reuters, Tumblr, ...
 
-.image images/bus.jpg 170 _
+.image images/bus.jpg 120 _
+
 
 * Comment j'utilise le Go
 
@@ -87,21 +101,32 @@ Découverte à Arkéa, développement d'une appli backend avec:
 
 De façon perso:
 
-- Backend de YouCode sur Google App Engine
-- Backend d'un projet scolaire
-- À OVH?
+- Backend de YouCode.io sur Google App Engine
+- Backend de gestion de score pour un projet scolaire
 
 * Les gros avantages de Go
 
 - Facilité de lecture
 - Gofmt
 - Go get
+- Cross-compilation
 - Librairie standard gigantesque
-- Goroutines
+- Concurrence extrêmement simple
 
+* Concurrence, quésako ?
 
-* Le Go en 2015
-.image images/gobash.jpg 500 _
+Concurrency is about dealing with lots of things at once.
+
+Parallelism is about doing lots of things at once.
+
+Not the same, but related.
+
+One is about structure, one is about execution.
+
+.caption From Rob Pike: Concurrency is not Parallelism (it's better) [[http://concur.rspace.googlecode.com/hg/talk/concur.html][http://concur.rspace.googlecode.com/hg/talk/concur.html]]
+
+.image images/concurrency.jpg 300 _
+
 
 
 * Go et Java ont des points communs
@@ -170,17 +195,94 @@ Fonctions
 .image images/gopher.jpg 200 _
 
 * On veut du code !
-One loop to rule them all
+One loop to rule them all 1/3
 
 .play sample/loop.go
 .image images/gopher.jpg 200 _
 
+* On veut du code !
+One loop to rule them all 2/3
+
+.play sample/loop2.go
+.image images/gopher.jpg 200 _
+
+* On veut du code !
+One loop to rule them all 3/3
+
+.play sample/loop3.go
+.image images/gopher.jpg 200 _
+
+* On veut du code !
+If
+
+.play sample/if.go
+.image images/gopher.jpg 200 _
+
+
+* On veut du code !
+Switch
+
+.play sample/switch.go
+
+* On veut du code !
+Un truc pratique: le defer
+
+.play sample/defer.go
+.image images/gopher.jpg 200 _
+
+* On veut du code !
+Oh, un pointeur !
+
+.play sample/pointer.go
+.image images/gopher.jpg 200 _
+
+
+
+* On veut du code !
+Oh, une struct !
+
+.play sample/struct.go
+.image images/gopher.jpg 200 _
+
+####################
+* On veut du code !
+Oh, un objet !
+
+.play sample/object.go
+.image images/gopher.jpg 200 _
+
+####################
+* On veut du code !
+Tableaux
+
+.play sample/array.go
+.image images/gopher.jpg 200 _
+
+####################
+* On veut du code !
+Slices
+
+.play sample/slice.go
+.image images/gopher.jpg 200 _
+
+############## 
+# concurrence
+############## 
 
 * On veut du code !
 Le modèle de concurrence avec les goroutines
 
 .play sample/routine.go
 
+* On veut du code !
+Les channels
+
+.play sample/channel.go
+.image images/gopher.jpg 200 _
+
+############## 
+# Last slide
+############## 
 
 * On veut du code !
 Web Serveur

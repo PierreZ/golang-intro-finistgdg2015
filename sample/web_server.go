@@ -9,7 +9,7 @@ import (
 func main() {
 	http.HandleFunc("/hello", handleHello)
 	fmt.Println("serving on http://localhost:7777/hello")
-	log.Fatal(http.ListenAndServe("localhost:7777", nil))
+	http.ListenAndServe("localhost:7777", nil)
 }
 
 func handleHello(w http.ResponseWriter, req *http.Request) {
