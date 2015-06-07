@@ -1,5 +1,5 @@
 Introduction au langage Go
-FinistGDG 2015
+GDG Finistère 2015
 Tags: FinistGDG, Golang
 
 Pierre Zemb
@@ -27,7 +27,7 @@ https://pierrezemb.fr
 - Qui utilise ce langage de hipster ?
 - Moi ! (et je l'assume entièrement)
 - La concurrence
-- GO VS Java
+- Go VS Java
 - On veut du code !
 
 * Mais c'est quoi le Go ?
@@ -46,7 +46,7 @@ Go a été créé par:
 - Rob Pike
 - Robert Griesemer
 
-.image http://cse360fall13.wikispaces.asu.edu/file/view/Screen%20shot%202013-09-15%20at%201.31.54%20PM.png/451286472/Screen%20shot%202013-09-15%20at%201.31.54%20PM.png 250 _
+.image images/google.jpg 250 _
 .caption (De gauche à droite) Robert Griesemer, Rob Pike and Ken Thompson 
 .caption [[http://cse360fall13.wikispaces.asu.edu/Google%20Go][http://cse360fall13.wikispaces.asu.edu/Google%20Go]]
 
@@ -57,7 +57,7 @@ Go a été créé par:
 - Les temps de compilation sont beaucoup trop long
 
 
-.image http://imgs.xkcd.com/comics/compiling.png 300 _
+.image images/compiling.png 300 _
 .caption Compiling [[https://xkcd.com/303/][https://xkcd.com/303/]]
 
 * Le Go en 2015
