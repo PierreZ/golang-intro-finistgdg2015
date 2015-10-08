@@ -1,9 +1,8 @@
 Introduction au langage Go
-GDG Finistère 2015
+Club Elec ISEN Brest 2015
 Tags: FinistGDG, Golang
 
 Pierre Zemb
-Etudiant à ISEN Brest - Stagiaire OVH.pl
 contact@pierrezemb.fr
 https://pierrezemb.fr
 @PierreZ
@@ -11,10 +10,10 @@ https://pierrezemb.fr
 * Pierre Zemb
 
 .image images/isen-groupe.jpg 100 _
-.caption Etudiant ISEN Brest bientôt en cinquième année !
+.caption Etudiant Génie Logiciel - DevOps OVH
 
-.image images/ovh.jpg 100 _
-.caption Stagiaire OVH à Wroclaw en Pologne
+.image images/ovh.png 100 _
+.caption Alternant DevOps à OVH Brest
 
 .link https://pierrezemb.fr https://pierrezemb.fr
 .link https://twitter.com/PierreZ @PierreZ
@@ -42,9 +41,9 @@ https://pierrezemb.fr
 
 Go a été créé par:
 
-- Ken Thompson
-- Rob Pike
-- Robert Griesemer
+- Ken Thompsoni (UNIX/B)
+- Rob Pike (Plan 9/UTF-8)
+- Robert Griesemer (Moteur V8 JavaScript/GFS)
 
 .image images/google.jpg 250 _
 .caption (De gauche à droite) Robert Griesemer, Rob Pike and Ken Thompson 
@@ -93,16 +92,19 @@ Apcera, Bitbucket, bitly, Canonical, CloudFlare, Core OS, Digital Ocean, Docker,
 
 * Comment j'utilise le Go
 
-Découverte à Arkéa, développement d'une appli backend avec:
+à OVH:
 
-- Du REST
-- Démarrage et suivi de processus Java
-- Etablissement d'une connexion SSH
+- Backend de monitoring/IoT
+
+à Arkéa:
+
+- POC d'une application de gestion de process Java
 
 De façon perso:
 
 - Backend de YouCode.io sur Google App Engine
 - Backend de gestion de score pour un projet scolaire
+
 
 * Les gros avantages de Go
 
@@ -115,17 +117,18 @@ De façon perso:
 
 * Concurrence, quésako ?
 
-Concurrency is about dealing with lots of things at once.
+Concurrence = Gérer différentes choses complètement différentes à la fois
 
-Parallelism is about doing lots of things at once.
+- C'est de la structure
 
-Not the same, but related.
+Parrallélisme = Faire la même chose plein de fois
 
-One is about structure, one is about execution.
+- C'est de l'exécution
+
 
 .caption From Rob Pike: Concurrency is not Parallelism (it's better) [[http://concur.rspace.googlecode.com/hg/talk/concur.html][http://concur.rspace.googlecode.com/hg/talk/concur.html]]
 
-.image images/concurrency.jpg 300 _
+.image images/concurrency.jpg 250 _
 
 
 
